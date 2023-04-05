@@ -18,7 +18,7 @@ export default function NavBarPlantas() {
     <>
     <Navbar className='navbar-dark bg-dark'>
       <Container>
-        <Navbar.Brand href="/home">🌲Vivero Panchita</Navbar.Brand>
+        <Navbar.Brand href="/">🌲Vivero Panchita</Navbar.Brand>
           <Navbar.Text>
             <Link to={`/Carrito`}>
             🛒 {

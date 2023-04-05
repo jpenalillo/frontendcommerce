@@ -29,7 +29,6 @@ function App() {
           <CartContext.Provider value={sharedState}>
             <BrowserRouter>
                 <Routes>
-                  <Route path="/" element={<Home/>} />
                   <Route path="/Login" element={<Login/>} />
                   <Route path="/Signup" element={<Signup/>} />
                   <Route path="/Carrito" element={<Carritos />} />

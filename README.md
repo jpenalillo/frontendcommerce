@@ -1,11 +1,3 @@
-LINK DE DEMO EN YOUTUBE!!!!
-
-
-https://youtu.be/SGY_9ZLEiEo
-
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -9,8 +9,8 @@ export default function SignupForm() {
     //Función al enviar el formulario
 
     
-  async function enviarFormulario(e) {
     const navigate = useNavigate();
+  async function EnviarFormulario(e) {
     e.preventDefault()
     
  
@@ -35,7 +35,7 @@ export default function SignupForm() {
     <div className="form">
         <h1>Registrarse</h1>
 
-      <form onSubmit={enviarFormulario} method="POST">
+      <form onSubmit={EnviarFormulario} method="POST">
         <div className="input-container">  
           <label>Nombre:</label>
             <input type="text" name="user" onChange={(e)=> setNombre(e.target.value)}/> <p></p>

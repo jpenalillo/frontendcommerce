@@ -45,7 +45,7 @@ export default function LoginCM() {
 
     <div className="form">
       <h1>Login</h1>
-      <form onSubmit={enviarFormulario} method="POST">
+      <form onSubmit={enviarFormulario} method="POST" style={{width:"30%"}} className='col-lg-6 offset-lg-4 '>
 
       <Form.Group className="mb-2 text-start" controlId="formBasicEmail">
         <FloatingLabel key="emailUser" label="Email" className="mb-3" >

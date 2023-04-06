@@ -48,7 +48,7 @@ export default function SignupForm() {
   return (
     <div className="form">
         <h1>Registrarse</h1>
-      <form onSubmit={EnviarFormulario} method="POST">
+      <form onSubmit={EnviarFormulario} method="POST"  style={{width:"30%"}} className='col-lg-6 offset-lg-4'>
         <FloatingLabel key="nombreComple" controlId="floatingInput" label="Nombre Completo *" className="mb-3" >
             <Form.Control type="text" placeholder="Indique su nombre completo" className='nombre' name="nombre" required onChange={(e)=> setNombre(e.target.value)}/>
         </FloatingLabel>

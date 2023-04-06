@@ -14,7 +14,7 @@ export default function Success() {
         
             <h1>¡Felicidades por tu compra!</h1>
             <h5>Te avisamos por correo la fecha de entrega de el envío de tu compra</h5>
-            <a href='/' className='btn btn-secondary'>Volver al home</a>  {boton}
+            <a href='/' className='btn btn-secondary'>Volver al home</a>
         </div>
     </>
   )

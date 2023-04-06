@@ -30,10 +30,10 @@ export default function Plantas() {
               <div 
               key={item.id} className="text-center">
                 <h1>{item.titulo}</h1>
-                <img src={item.imagen1} />
-                  <p style={{width:'700px',margin:'0 auto'}}>{item.descripcion}</p>
+                <img src={item.imagen1} class="img-responsive"  style={{width:"30%"}}/>
+                  <p style={{width:'700px',margin:'0 auto'}} className='text-primary'>{item.descripcion}</p>
                 
-                  <p>Precio: ${item.precio}</p>
+                  <p className='text-primary'>Precio: ${item.precio}</p>
                   
         {<Button className='btn btn-info' 
         onClick={e => 

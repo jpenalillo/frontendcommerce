@@ -28,6 +28,7 @@ export default function Miscompras() {
     return (
         <>
         <NavBarPizza />
+        <h1>Mis compras</h1>
       <div className='contenedorCard'>
          {db.map(item =>
            <li key="{item.id}">

@@ -5,9 +5,13 @@ export default function Success() {
   return (
     <>
         <NavBarPizza/>
-        <h1>¡Felicidades por tu compra!</h1>
-        <p>Te avisamos por correo la fecha de entrega de el envío de tu compra</p>
-        <a href='/'>Volver al home</a> | <a href='/Miscompras'>Ir a mis compras</a>
+        <div className='text-center'>
+        
+            <h1>¡Felicidades por tu compra!</h1>
+            <h5>Te avisamos por correo la fecha de entrega de el envío de tu compra</h5>
+            <a href='/' className='btn btn-secondary'>Volver al home</a>  <a href='/Miscompras' className='btn btn-secondary'>Ir a mis compras</a>
+
+        </div>
     </>
   )
 }

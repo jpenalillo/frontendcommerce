@@ -10,16 +10,20 @@ export default function Miscompras() {
     }, []);
     
     const GetallCompras = async () => {
-        
-    const endpoint = "https://ecommerce.juanpenailillo.repl.co/compras/";
-    const data = await fetch(endpoint, {
-                        method: 'GET',
-                        headers: {
-                          'Authorization': 'Bearer ' + token
-                          }
-                        });
-      const plantas = await data.json()
-      setDb(plantas)
+      try{  
+        const endpoint = "https://ecommerce.juanpenailillo.repl.co/compras/";
+        const data = await fetch(endpoint, {
+                            method: 'GET',
+                            headers: {
+                              'Authorization': 'Bearer ' + token
+                              }
+                            });
+          const plantas = await data.json()
+          setDb(plantas)
+      } catch (error) {
+        alert("Algo salió mal ...");
+        console.log(error);
+      }
     };
     return (
         <>

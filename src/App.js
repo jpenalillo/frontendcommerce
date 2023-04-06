@@ -12,6 +12,7 @@ import Signup from "./views/Signup"
 import Logout from './views/Logout';
 import Success from './views/Success';
 import Miscompras from './views/Miscompras';
+import Perfil from './views/Perfil';
 import './assets/css/bootstrap.min.css';
 import CartContext from "./contexts/CartContext"
 import ProductContext from "./contexts/ProductContext"
@@ -36,6 +37,7 @@ function App() {
                   <Route path='/Logout' element={<Logout />} />
                   <Route path='/Success' element={<Success />} />
                   <Route path='/Miscompras' element={<Miscompras />} />
+                  <Route path='/Perfil' element={<Perfil />} />
                   <Route path="*" element={<Home />} />
                 </Routes>
             </BrowserRouter>

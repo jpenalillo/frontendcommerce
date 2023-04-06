@@ -10,11 +10,11 @@ export default function Plantas() {
   const {product,setProducts} = useContext(ProductContext)
   
   useEffect(() => {
-    getPizza()
+    getPlanta()
   }, []);
 
   
-  const getPizza = async () => {
+  const getPlanta = async () => {
     const data = await fetch(`https://ecommerce.juanpenailillo.repl.co/productos/${id}`)
     const users = await data.json()
     setInfo(users)

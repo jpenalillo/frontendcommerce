@@ -33,9 +33,9 @@ export default function Carritos() {
     }
 
   return (
-    <div className='container'>
-    
+    <>
     <NavBarPizza/>
+    <div className='container'>
     <h2 className='text-center'>Detalle del pedido</h2>
     <div className='text-center'>
     <ul>
@@ -63,5 +63,6 @@ export default function Carritos() {
             {botones}
     </div>
     </ div>
+    </>
   )
 }

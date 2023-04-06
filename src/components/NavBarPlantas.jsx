@@ -1,4 +1,4 @@
-import {React,useContext} from 'react'
+import {React,useContext,useState} from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import ProductContext from '../contexts/ProductContext';
@@ -7,7 +7,7 @@ export default function NavBarPlantas() {
   const { products} = useContext(ProductContext)
   const token = localStorage.getItem("token");
   let botones;
-  
+
     if(token){
       botones = <><Link to={`/Miscompras`}>  | Mis Compras</Link><Link to={`/Logout`}>  | Logout</Link></>
       

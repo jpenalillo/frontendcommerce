@@ -8,9 +8,14 @@ export default function ContentHome() {
   }, []);
   
   const GetallPizzas = async () => {
-    const data = await fetch("https://ecommerce.juanpenailillo.repl.co/productos/")
-    const pizzas = await data.json()
-    setDb(pizzas)
+    try{
+      const data = await fetch("https://ecommerce.juanpenailillo.repl.co/productos/")
+      const pizzas = await data.json()
+      setDb(pizzas)  
+    } catch (error) {
+      alert("Algo salió mal ...");
+      console.log(error);
+    }
   };
   return (
     <div className='contenedorCard'>

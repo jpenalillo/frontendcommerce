@@ -11,7 +11,7 @@ export default function Miscompras() {
     
     const GetallCompras = async () => {
       try{  
-        const endpoint = "https://ecommerce.juanpenailillo.repl.co/compras/";
+        const endpoint = "https://ecommerceplants.fly.dev/compras/";
         const data = await fetch(endpoint, {
                             method: 'GET',
                             headers: {

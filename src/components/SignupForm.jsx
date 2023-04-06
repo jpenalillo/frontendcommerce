@@ -24,7 +24,7 @@ export default function SignupForm() {
         alert('Faltan campos obligatorios')
       }else{    
           try {
-            const endpoint = "https://ecommerce.juanpenailillo.repl.co/usuarios";
+            const endpoint = "https://ecommerceplants.fly.dev/usuarios";
             const response = await fetch(endpoint, {
                                 method: 'POST',
                                 headers: {

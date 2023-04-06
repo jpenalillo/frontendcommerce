@@ -22,7 +22,7 @@ function FormUser() {
   
 
     const getUsuarioData = async () => {
-        const urlServer = "https://ecommerce.juanpenailillo.repl.co";
+        const urlServer = "https://ecommerceplants.fly.dev";
         const endpoint = "/usuarios";
         const token = localStorage.getItem("token");
         console.log(token);

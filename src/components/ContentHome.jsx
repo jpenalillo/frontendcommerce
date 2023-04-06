@@ -9,7 +9,7 @@ export default function ContentHome() {
   
   const GetallPizzas = async () => {
     try{
-      const data = await fetch("https://ecommerce.juanpenailillo.repl.co/productos/")
+      const data = await fetch("https://ecommerceplants.fly.dev/productos/")
       const pizzas = await data.json()
       setDb(pizzas)  
     } catch (error) {

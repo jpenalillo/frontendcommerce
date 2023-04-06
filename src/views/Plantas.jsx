@@ -15,7 +15,7 @@ export default function Plantas() {
 
   
   const getPlanta = async () => {
-    const data = await fetch(`https://ecommerce.juanpenailillo.repl.co/productos/${id}`)
+    const data = await fetch(`https://ecommerceplants.fly.dev/productos/${id}`)
     const users = await data.json()
     setInfo(users)
   };

@@ -13,7 +13,7 @@ export default function Carritos() {
       e.preventDefault()
       
   
-      const endpoint = "https://ecommerce.juanpenailillo.repl.co/comprar/";
+      const endpoint = "https://ecommerceplants.fly.dev/comprar/";
       let objProduct = products;
       const response = await fetch(endpoint, {
                           method: 'POST',

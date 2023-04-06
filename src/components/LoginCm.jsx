@@ -18,7 +18,7 @@ export default function LoginCM() {
  
     try {
       if (!email || !password) return alert("Email y password obligatorias");
-          const endpoint = "https://ecommerce.juanpenailillo.repl.co/login/";
+          const endpoint = "https://ecommerceplants.fly.dev/login/";
           const response = await fetch(endpoint, {
                         method: 'POST',
                         headers: {
